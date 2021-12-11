@@ -15,6 +15,8 @@ https://github.com/YfryTchsGD/Log4jAttackSurface
 Resources by Florian Roth (comment section also contains usefull info)
 https://gist.github.com/Neo23x0/e4c8b03ff8cdf1fa63b7d15db6e3860b
 
+Hashes for vulneraable log4j versions
+https://github.com/mubix/CVE-2021-44228-Log4Shell-Hashes
 
 ## Testing apps for log4shell vuln
 ### Automatic:
