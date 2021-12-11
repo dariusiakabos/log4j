@@ -1,7 +1,5 @@
-# log4j
-Compilation of log4j OSINT findings, including Detection, Attack Surface, Mitigation, IoCs.
-
 # Log4J Zero-Day
+Compilation of log4j OSINT findings, including Detection, Attack Surface, Mitigation, IoCs.
 
 # Affected versions:
 - Apache Log4j v2.0 -> v2.14.1
