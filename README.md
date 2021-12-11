@@ -44,8 +44,11 @@ https://twitter.com/ET_Labs/status/1469339963871354884
 "How to detect if affected: Start netcat parallel to your app: "nc -lp 1234", then type the following into app where it gets logged (e.g. the query string of your search): "${jndi:ldap://127.0.0.1:1234/abc}" If you then see garbage/emojis in the netcat console your're vulnerable!"
 
 # III. Mitigation:
-## 1. Patching
+## 1. Permanent mitigation (Patching)
 - Upgrade log4j versions to log4j-2.15.0-rc1
+-   URL: https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.15.0/
+-   Release notes: https://logging.apache.org/log4j/2.x/changes-report.html#a2.15.0
+-   Announcement: https://logging.apache.org/log4j/2.x/security.html
 
 ## 2. Temporary/partial mitigation
 ### a) Partial Mitigation:
