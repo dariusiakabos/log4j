@@ -4,6 +4,7 @@ Compilation of log4j OSINT findings, including Detection, Attack Surface, Mitiga
 ## Affected versions:
 - Apache Log4j v2.0 -> v2.14.1
 - Anyone using Apache Struts framework is likely vulnerable
+Main blog covering this: https://www.lunasec.io/docs/blog/log4j-zero-day/
 
 ## Attack surface
 A compilation of exploit examples.
