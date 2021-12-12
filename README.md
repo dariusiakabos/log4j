@@ -12,14 +12,22 @@ A compilation of exploit examples.
 https://github.com/YfryTchsGD/Log4jAttackSurface
 
 # II. Detection
+
 Resources by Florian Roth (comment section also contains usefull info)
 https://gist.github.com/Neo23x0/e4c8b03ff8cdf1fa63b7d15db6e3860b
+
+## Log4Shell Detector V0.5 by Florian Roth
+https://github.com/Neo23x0/log4shell-detector
 
 Hashes for vulneraable log4j versions
 https://github.com/mubix/CVE-2021-44228-Log4Shell-Hashes
 
+Swiss CERT guidelines for detecting and preventing
+https://www.govcert.admin.ch/blog/zero-day-exploit-targeting-popular-java-library-log4j/
+
 ## Testing apps for log4shell vuln
-### Automatic:
+### a) Canarytokens
+#### Automatic:
 https://twitter.com/ThinkstCanary/status/1469439743905697797
 You can use a point & click canarytoken from https://canarytokens.org to help test for the #log4j  / #Log4Shell issue.
 
@@ -28,13 +36,17 @@ You can use a point & click canarytoken from https://canarytokens.org to help te
 3) enter the email address you wish to be notified at;
 4) copy/use the returned string...
 
-### Manual
+#### Manual
 1. Generate a DNS token https://canarytokens.org/generate#
 2. Wrap that token in 
 Prefix: ${jndi:ldap://
 Suffix: /a}
 3. Use that value in search forms, profile data, settings etc. of your apps
 4. Get notified when you triggered a reaction
+
+## b) Huntress Log4Shell Vulnerability Tester
+Details on their page
+https://log4shell.huntress.com/
 
 ## Some semgrep rules for searching Java source code for vulnerable code paths.
 https://github.com/returntocorp/semgrep-rules/pull/1650/commits/ecfc32623eec718d61ec83b9196574f333191008
@@ -78,10 +90,13 @@ https://gist.github.com/superducktoes/9b742f7b44c71b4a0d19790228ce85d8
 "Please find the following raw CVE-2021-44228 Log4J / Logshell payloads GreyNoise has detected thus far."
 https://gist.github.com/nathanqthai/01808c569903f41a52e7e7b575caa890
 
+More payloads
+https://gist.github.com/yt0ng/8a87f4328c8c6cde327406ef11e68726
+
 ## Further updates: 
 https://twitter.com/GreyNoiseIO/with_replies
 
-## Attack reported in github comment:
+## Reported attacks:
 "Seeing 45[.]155[.]205[.]233 do the initial scan with an base64 encoded string. When decoded tries to do a curl wget bash etc....to setup a shell.
 Stage 2,3 and 4 also seen with final payloads:
 nspps/Kingsing malware via following ip's
@@ -90,3 +105,6 @@ nspps/Kingsing malware via following ip's
 185.154.53.140
 185.191.32.198"
 
+45.155.205.233 - Russian IP seen exploiting.
+https://twitter.com/VessOnSecurity/status/1469950517010968582
+https://twitter.com/entropyqueen_/status/1469961345848299520
