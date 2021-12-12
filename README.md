@@ -44,7 +44,7 @@ Suffix: /a}
 3. Use that value in search forms, profile data, settings etc. of your apps
 4. Get notified when you triggered a reaction
 
-## b) Huntress Log4Shell Vulnerability Tester
+### b) Huntress Log4Shell Vulnerability Tester
 Details on their page
 https://log4shell.huntress.com/
 
