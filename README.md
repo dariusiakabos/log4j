@@ -1,6 +1,28 @@
 # Log4J Zero-Day
 Compilation of log4j OSINT findings, including Detection, Attack Surface, Mitigation, IoCs.
 # I. Overview
+## Summary
+- This vulnerability makes it possible for any attacker who can inject text into log messages or log message parameters into server logs to load code from a remote server. The targeted server then executes that code via calls to the Java Naming and Directory INterface (JNDI).
+
+- JNDI interfaces with a number of network services:
+	1. Lightweight Directory Access Protocol (LDAP) - default port 389
+	2. Secure LDAP (LDAPS) - default port 636
+	3. Domain Name Service - default port 53
+	4. Java's Remote Interface (RMI) - default port 1099
+	5. Common Object Request Broker (CORBA) - default port 
+
+- As of 13.12.2021, the attacks so far were either cryptominers and automated botnets (Mirai, Tsunami and Kinsing)
+
+- Best fix is to upgrade to the patched version, but the challenge is to find where log4j was deployed as a component &/or wait for vendor to patch.
+
+- Short term:
+	- Good: block outbound LDAP & RMI ports
+	- Better: block outbound LDAP & RMI protocols (regardless of port)
+	- Best: block all outbound traffic
+
+- Long term:
+	- Identify and update instances of Log4J or mitigating the issue by changing settings in Log4J, (either through XML or YAML configuration files in the root of Log4J’s path settings, or programmatically). That may require code changes in products where Log4J is embedded.
+
 ## Affected versions:
 - Apache Log4j v2.0 -> v2.14.1
 - Anyone using Apache Struts framework is likely vulnerable
