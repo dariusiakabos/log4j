@@ -9,7 +9,7 @@ Compilation of log4j OSINT findings, including Detection, Attack Surface, Mitiga
 	2. Secure LDAP (LDAPS) - default port 636
 	3. Domain Name Service - default port 53
 	4. Java's Remote Interface (RMI) - default port 1099
-	5. Common Object Request Broker (CORBA) - default port 
+	5. Common Object Request Broker (CORBA)
 
 - As of 13.12.2021, the attacks so far were either cryptominers and automated botnets (Mirai, Tsunami and Kinsing)
 
