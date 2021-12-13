@@ -86,6 +86,12 @@ Source: Greynose.io
 https://www.greynoise.io/viz/query/?gnql=tags%3A%22Apache%20Log4j%20RCE%20Attempt%22
 Community API https://docs.greynoise.io/reference/get_v3-community-ip
 
+## Rogue LDAP servers used for exploitation attempts to ThreatFox
+API call:
+curl -X POST https://threatfox-api.abuse[.]ch/api/v1/ -d '{ "query": "taginfo", "tag": "log4j" }
+
+URL: https://threatfox.abuse.ch/browse/tag/log4j/
+
 ## New link with updated C2/Callback domains:
 https://gist.github.com/superducktoes/9b742f7b44c71b4a0d19790228ce85d8
 
