@@ -6,6 +6,7 @@ Compilation of log4j OSINT findings, including Detection, Attack Surface, Mitiga
 - Anyone using Apache Struts framework is likely vulnerable
 
 ### Main blog covering this: https://www.lunasec.io/docs/blog/log4j-zero-day/
+### Collection of information on log4j by @TychoTithonus (Royce Williams), including affected products: https://www.techsolvency.com/story-so-far/cve-2021-44228-log4j-log4shell/
 
 ## Attack surface
 A compilation of exploit examples.
