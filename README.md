@@ -52,7 +52,7 @@ https://github.com/Neo23x0/log4shell-detector
 ## Regex Querry for Elastic (Lucene)
 /.*(\{|%7B)[Jj][Nn][Dd][Ii].*/ 
 
-Hashes for vulneraable log4j versions
+## Hashes for vulneraable log4j versions
 https://github.com/mubix/CVE-2021-44228-Log4Shell-Hashes
 
 ## Testing apps for log4shell vuln
