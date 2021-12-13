@@ -27,6 +27,9 @@ Compilation of log4j OSINT findings, including Detection, Attack Surface, Mitiga
 - Apache Log4j v2.0 -> v2.14.1
 - Anyone using Apache Struts framework is likely vulnerable
 
+## Swiss CERT guidelines Log4J 
+https://www.govcert.admin.ch/blog/zero-day-exploit-targeting-popular-java-library-log4j/
+
 ### Main blog covering this: 
 https://www.lunasec.io/docs/blog/log4j-zero-day/
 ### Collection of information on log4j, including affected products
@@ -46,9 +49,6 @@ https://github.com/Neo23x0/log4shell-detector
 
 Hashes for vulneraable log4j versions
 https://github.com/mubix/CVE-2021-44228-Log4Shell-Hashes
-
-Swiss CERT guidelines for detecting and preventing
-https://www.govcert.admin.ch/blog/zero-day-exploit-targeting-popular-java-library-log4j/
 
 ## Testing apps for log4shell vuln
 ### a) Canarytokens
