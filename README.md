@@ -82,8 +82,11 @@ This has been currently only tested with JDK 8 & 11!"
 
 ## IPs exploiting the vuln at scale (read the comments for API and python/bash scripts)
 https://gist.github.com/gnremy/c546c7911d5f876f263309d7161a7217
+
 Source: Greynose.io
+
 https://www.greynoise.io/viz/query/?gnql=tags%3A%22Apache%20Log4j%20RCE%20Attempt%22
+
 Community API https://docs.greynoise.io/reference/get_v3-community-ip
 
 ## Rogue LDAP servers used for exploitation attempts to ThreatFox
