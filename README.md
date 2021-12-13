@@ -49,6 +49,9 @@ https://gist.github.com/Neo23x0/e4c8b03ff8cdf1fa63b7d15db6e3860b
 ## Log4Shell Detector V0.5 by Florian Roth
 https://github.com/Neo23x0/log4shell-detector
 
+## Regex Querry for Elastic (Lucene)
+/.*(\{|%7B)[Jj][Nn][Dd][Ii].*/ 
+
 Hashes for vulneraable log4j versions
 https://github.com/mubix/CVE-2021-44228-Log4Shell-Hashes
 
